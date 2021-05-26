@@ -58,11 +58,11 @@
 }
 
 
-body {
-  color: #000;
-  background-color: #fff;
-  font-family: "Droid Serif", YuGothic, "游ゴシック", sans-serif;
-}
+/*body {*/
+/*  color: #000;*/
+/*  background-color: #fff;*/
+/*  font-family: "Droid Serif", YuGothic, "游ゴシック", sans-serif;*/
+/*}*/
 
 /*.animated {*/
   /* アニメーションで表示させるため最初は非表示 */
@@ -122,6 +122,10 @@ body {
   max-width: 1024px;
 }
 
+.image-gallery p {
+  display: inline-block;
+}
+
 .image-gallery__item {
   /* 横に並ぶようにする */
   display: inline-block;
@@ -151,26 +155,9 @@ body {
 .member {
   padding-top: 82px;
   padding-bottom: 92px;
-  background-color: #d3d3d3;
-  /* 上から重ねる順に指定 */
-  /*background: url(../img/puppies-bg-large.png), url(../img/puppies-bg-small.png),*/
-  /*  #d3d3d3;*/
+  background-color: white;
 }
 
-/*.col-8 p {*/
-/*  height: 600px;*/
-/*  font-size: 100%;*/
-/*}*/
-
-.main__phrase,
-.about__phrase,
-.member__phrase,
-.cross__phrase {
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 1.79px;
-}
 
 .main__title,
 .about__title,
@@ -185,19 +172,24 @@ body {
 .about {
   padding-top: 82px;
   padding-bottom: 44px;
-  background-color: #d1edfb;
+  background-color: #f8f9fa;
 }
 
-.main,
-.cross {
+.main {
   padding-top: 82px;
   padding-bottom: 92px;
-  background-color: #faf7f0;
+  background-color: white;
+}
+
+.cross {
+  padding-top: 82px;
+  padding-bottom: 44px;
+  background-color: #f8f9fa;
 }
 
 footer {
   padding: 50px 0;
-  background-color: #fafaf3;
+  background-color: white;
   text-align: center;
 }
 
@@ -335,17 +327,14 @@ footer {
   }
 }
 
-figcaption {
-  font-size: 60px;
-  color: #ffffff;
-  position: absolute;
-  top: 0;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  align-items: center;
-  justify-content: center;
+image-gallery__item p {
+  padding: 10px;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+  font-family: "Droid Serif", YuGothic, "游ゴシック", sans-serif;
 }
 
 /* 印刷用スタイル */
@@ -356,9 +345,3 @@ figcaption {
   }
 }
 
-/*.col-12 {*/
-/*  padding-top: 50px;*/
-/*  padding-bottom: 50px;*/
-/*  letter-spacing: 3px;*/
-/*  font-weight: bold;*/
-/*}*/

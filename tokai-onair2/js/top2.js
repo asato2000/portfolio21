@@ -152,20 +152,20 @@ $('.nav-link').on('click', (e) => {
   $('.navbar-toggler:visible').trigger('click');
 });
 
-// d-inline-blockクラスの付いた要素にMagnific Popupを適用
-$('.d-inline-block').magnificPopup({
-  type: 'image',
-  gallery: { enabled: true },
+// // d-inline-blockクラスの付いた要素にMagnific Popupを適用
+// $('.d-inline-block').magnificPopup({
+//   type: 'image',
+//   gallery: { enabled: true },
 
-  /**
-   * ポップアップに適用されるクラス。
-   * ここではフェードイン・アウト用のmfp-fadeクラスを適用。
-   */
-  mainClass: 'mfp-fade',
+//   /**
+//   * ポップアップに適用されるクラス。
+//   * ここではフェードイン・アウト用のmfp-fadeクラスを適用。
+//   */
+//   mainClass: 'mfp-fade',
 
-  // ポップアップが非表示になるまでの待ち時間
-  removalDelay: 300,
-});
+//   // ポップアップが非表示になるまでの待ち時間
+//   removalDelay: 300,
+// });
 
 
 // 初期状態として1番目のタブを表示
