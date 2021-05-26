@@ -57,13 +57,6 @@
   font-weight: 100;
 }
 
-
-/*body {*/
-/*  color: #000;*/
-/*  background-color: #fff;*/
-/*  font-family: "Droid Serif", YuGothic, "游ゴシック", sans-serif;*/
-/*}*/
-
 /*.animated {*/
   /* アニメーションで表示させるため最初は非表示 */
 /*  opacity: 0;*/
@@ -114,7 +107,7 @@
 }
 
 .image-gallery {
-  /* 左右中央に置く */
+   /*左右中央に置く */
   margin: 0 auto;
   text-align: center;
 
@@ -122,24 +115,20 @@
   max-width: 1024px;
 }
 
-.image-gallery p {
-  display: inline-block;
-}
-
 .image-gallery__item {
-  /* 横に並ぶようにする */
+   /*横に並ぶようにする */
   display: inline-block;
 
-  /* width, heightがborderを含んだサイズになるようにする */
+   /*width, heightがborderを含んだサイズになるようにする */
   box-sizing: border-box;
 
   width: 120px;
   height: 120px;
 
-  /* 白い枠をつける */
-  border: 8px solid #fff;
+   /*白い枠をつける */
+  border: 5px solid #fff;
 
-  /* 影をつける */
+   /*影をつける */
   box-shadow: 4px 4px 6px 1px #ccc;
 
   margin-left: 9px;
@@ -294,13 +283,15 @@ footer {
   }
 
   .image-gallery__item {
-    width: 192px;
-    height: 192px;
+    width: 250px;
+    height: 250px;
     border: 21px solid #fff;
     box-shadow: 8px 8px 12px 1px #ccc;
   }
+  
+  
 
-  .card__number,
+  
   .card__icon {
     font-size: 4rem;
   }
@@ -324,6 +315,20 @@ footer {
   }
   .showcase--rightpic .showcase__details {
     margin: 0 0 0 auto;
+  }
+}
+
+@media (max-width:767px) {
+   .image-gallery__item {
+    width: 425px;
+    height: 425px;
+    border: 21px solid #fff;
+    box-shadow: 8px 8px 12px 1px #ccc;
+  }
+  
+  .img-fluid {
+    width: 396px;
+    height: 396px;
   }
 }
 
