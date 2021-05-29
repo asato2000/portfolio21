@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+body {
+  min-width: 1024px;
+  color: #000;
+  background-color: #fff;
+  font-family: "Droid Serif", YuGothic, "游ゴシック", sans-serif;
+}
+
 .top,
 .top__visual {
   /* 画面いっぱいに広げる */
@@ -334,12 +341,6 @@ footer {
 
 image-gallery__item p {
   padding: 10px;
-}
-
-body {
-  color: #000;
-  background-color: #fff;
-  font-family: "Droid Serif", YuGothic, "游ゴシック", sans-serif;
 }
 
 /* 印刷用スタイル */
