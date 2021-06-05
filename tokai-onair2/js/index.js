@@ -152,21 +152,14 @@ $('.nav-link').on('click', (e) => {
   $('.navbar-toggler:visible').trigger('click');
 });
 
-// // d-inline-blockクラスの付いた要素にMagnific Popupを適用
-// $('.d-inline-block').magnificPopup({
-//   type: 'image',
-//   gallery: { enabled: true },
-
-//   /**
-//   * ポップアップに適用されるクラス。
-//   * ここではフェードイン・アウト用のmfp-fadeクラスを適用。
-//   */
-//   mainClass: 'mfp-fade',
-
-//   // ポップアップが非表示になるまでの待ち時間
-//   removalDelay: 300,
-// });
-
+$(document).ready(function () {
+  $('.image-gallery').on('mouseover', function () {
+    $(this).children('.image-gallery p').stop().fadeIn();
+  });
+  $('image-gallery').on('mouseout', function () {
+    $(this).children('.image-gallery p').stop().fadeOut();
+  });
+});
 
 // 初期状態として1番目のタブを表示
 showTab('member-1');

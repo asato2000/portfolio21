@@ -124,6 +124,7 @@ wrap {
 
   width: 90%;
   max-width: 1024px;
+  position: relative;
 }
 
 .image-gallery__item {
@@ -145,6 +146,19 @@ wrap {
   margin-left: 9px;
   margin-right: 9px;
   margin-bottom: 18px;
+}
+
+.image-gallery p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #000;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0.8;
+  display: none;
 }
 
 .image-gallery__item:hover {
@@ -286,13 +300,6 @@ footer {
     font-size: 4rem;
   }
 
-  .main__phrase,
-  .about__phrase,
-  .member__phrase,
-  .cross__phrase {
-    font-size: 1.5rem;
-  }
-
   .image-gallery__item {
     width: 250px;
     height: 250px;
@@ -337,15 +344,7 @@ footer {
     box-shadow: 8px 8px 12px 1px #ccc;
   }
   
-  .img-fluid {
-    width: 396px;
-    height: 396px;
-  }
-}
 
-image-gallery__item p {
-  padding: 10px;
-}
 
 /* 印刷用スタイル */
 @media print {
