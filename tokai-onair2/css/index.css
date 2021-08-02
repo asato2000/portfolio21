@@ -148,18 +148,6 @@ wrap {
   margin-bottom: 18px;
 }
 
-.image-gallery p {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #000;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  opacity: 0.8;
-  display: none;
-}
 
 .image-gallery__item:hover {
   /* 1.1倍に拡大 */
